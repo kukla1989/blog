@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import './styles/vars';
+@import './styles/mixins';
+
+@import './components/Header/header.scss';
+@import './imgs/LogoSVG/logoSVG.scss';
+@import './components/About/about.scss';
+@import './components/Main/main.scss';
+
+
+.app {
+  min-height: 100vh;
+  background-color: $cDarkBlue;
+  color: $cGray;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.container {
+  padding: 0 12px;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.aqua-gradient {
+  @include aqua-gradient;
+}

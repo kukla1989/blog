@@ -1,0 +1,60 @@
+.about {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  
+  @include onPhone {
+    flex-direction: column-reverse;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include onPhone {
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-size: 48px;
+
+    @include onPhone {
+      font-size: 20px;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+
+    @include onPhone {
+      font-size: 10px;
+    }
+  }
+
+  &__social-media {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__man-img {
+    height: 300px;
+    width: 300px;
+
+    @include onPhone {
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  &__social-media-SVG {
+    height: 60px;
+    width: 60px;
+  
+    @include onPhone {
+      height: 30px;
+      height: 30px;
+    }
+  }
+}

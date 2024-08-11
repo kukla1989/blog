@@ -1,0 +1,17 @@
+@mixin aqua-gradient {
+  background: linear-gradient(to right, $cDarkAqua, $cLightAqua);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin onPhone {
+  @media (max-width: 619px) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (min-width: 620px) {
+    @content;
+  }
+}
