@@ -1,0 +1,122 @@
+@mixin tag($color1, $color2) {
+  width: calc((20 + var(--tagLength) * 7.5) * 1px);
+  height: 32px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, rgba($color1, 0.2), rgba($color2, 0.2));
+  position: relative;
+
+  @include onPhone {
+    width: calc((15 + var(--tagLength) * 6) * 1px);
+    height: 28px;
+  }
+}
+
+@mixin tag__text($color1, $color2) {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  white-space: nowrap;
+  background: linear-gradient(to bottom, $color1, $color2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 14px;
+  font-weight: bold;
+
+  @include onPhone {
+    font-size: 10px;
+  }
+}
+
+.project {
+  display: flex;
+  padding: 34px 8px;
+  margin-bottom: 41px;
+
+  border-radius: 20px;
+  background-color: rgba(30, 41, 59, 0.4);
+
+  @include onPhone {
+    padding: 10px;
+    margin-bottom: 25px;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 10px;
+  }
+
+  &__img {
+    height: 230px;
+
+    @include onPhone {
+      height: 50px;
+      margin-bottom: 18px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__info {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 26px;
+    align-items: center;
+
+    @include onPhone {
+      gap: 10px;
+      margin-bottom: 18px;
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+
+    @include onPhone {
+      font-size: 20px;
+    }
+  }
+
+  &__tag--green {
+    @include tag(#10b981, #bef264);
+  }
+
+  &__tag-text--green {
+    @include tag__text(#10b981, #bef264)
+  }
+
+  &__tag--red {
+    @include tag(#DC2626, #F97316);
+  }
+
+  &__tag-text--red {
+    @include tag__text(#DC2626, #F97316)
+  }
+
+  &__tag--blue {
+    @include tag(#7C3AED, #60A5FA);
+  }
+
+  &__tag-text--blue {
+    @include tag__text(#7C3AED, #60A5FA)
+  }
+
+  &__description {
+    font-size: 20px;
+    display: inline-block;
+    padding: 0 30px;
+
+    @include onPhone {
+      padding: 0;
+      max-width: 290px;
+      font-size: 13px;
+    }
+  }
+}

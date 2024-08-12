@@ -1,9 +1,11 @@
 import About from '../About/About'
+import Projects from '../Projects/Projects'
 
 const Main = () => {
   return (
     <div>
       <About />
+      <Projects />
     </div>
   )
 }

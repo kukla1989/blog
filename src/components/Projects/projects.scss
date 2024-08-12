@@ -1,0 +1,12 @@
+.projects {
+  &__title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 83px;
+
+    @include onPhone {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+  }
+}

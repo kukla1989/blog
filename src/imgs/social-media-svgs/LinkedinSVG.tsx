@@ -1,4 +1,4 @@
-import { SVGprops } from "../../types/SVGprops";
+import { SVGprops } from "../../types";
 
 function LinkedinSVG({ className }: SVGprops) {
   return (

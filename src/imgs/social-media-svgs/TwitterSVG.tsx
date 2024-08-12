@@ -1,4 +1,4 @@
-import { SVGprops } from "../../types/SVGprops";
+import { SVGprops } from "../../types";
 
 function TwitterSVG({ className }: SVGprops) {
   return (
