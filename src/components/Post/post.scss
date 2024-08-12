@@ -1,0 +1,53 @@
+$postWidth: 314px;
+$mPostWidth: 200px;
+
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  width: $postWidth;
+
+  background-color: $cUltraDarkBlue;
+  border-radius: 20px;
+
+  @include onPhone {
+    width: $mPostWidth;
+    gap: 15px;
+  }
+
+  &__img{
+    width: $postWidth;
+
+    @include onPhone {
+      width: $mPostWidth;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+
+    @include onPhone {
+      font-size: 15px;
+    }
+  }
+
+  &__date {
+    font-size: 20px;
+    color: $cDarkGray;
+
+    @include onPhone {
+      font-size: 14px;
+    }
+  }
+
+  &__info {
+    margin: 15px;
+    text-align: center;
+
+    @include onPhone {
+      margin: 10px;
+    }
+  }
+}

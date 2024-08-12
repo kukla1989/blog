@@ -7,15 +7,10 @@ export interface ProjectType {
   name: string;
   tag: string;
   description: string;
-  tagColor: 'green' | 'blue' | 'red' | 'yellow'; // Add other possible tag colors as needed
+  tagColor: 'green' | 'blue' | 'red';
 }
 
-interface Ass{
-  bump: string;
+export interface PostType {
+  img: string;
+  date: string;
 }
-
-interface Ass {
-  l: number;
-}
-
-const o: Ass = { bump: '34', l: 23 }
