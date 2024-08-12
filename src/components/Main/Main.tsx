@@ -1,4 +1,5 @@
 import About from '../About/About'
+import MainPagePosts from '../MainPagePosts/MainPagePosts'
 import Projects from '../Projects/Projects'
 
 const Main = () => {
@@ -6,6 +7,7 @@ const Main = () => {
     <div>
       <About />
       <Projects />
+      <MainPagePosts />
     </div>
   )
 }
