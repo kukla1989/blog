@@ -1,0 +1,102 @@
+.subscribe {
+  margin-bottom: 127px;
+  display: flex;
+
+  @media (max-width: 822px) {
+    margin-bottom: 57px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+
+    @include onPhone {
+      gap: 20px;
+    }
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: bold;
+
+    @include onPhone {
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+
+  &__info {
+    font-size: 20px;
+    color: $cGray;
+
+    @include onPhone {
+      font-size: 13px;
+      text-align: center;
+    }
+  }
+
+  $inputHeight: 70px;
+  $inputHeightMobile: 37px;
+
+  &__right {
+    width: 520px;
+    height: $inputHeight;
+    padding: 0 5px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 30px;
+    background-color: $cUltraDarkBlue;
+
+    @include onPhone {
+      width: 280px;
+      margin-top: 15px;
+      height: $inputHeightMobile;
+    }
+  }
+
+  &__input {
+    height: $inputHeight;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: $cWhite;
+    width: 350px;
+
+    @include onPhone {
+      height: $inputHeightMobile;
+      width: 250px;
+    }
+  }
+
+  &__input::placeholder {
+    color: $cGray;
+    font-size: 20px;
+
+    @include onPhone {
+      font-size: 13px;
+    }
+  }
+
+  &__button {
+    width: 164px;
+    height: 46px;
+
+    background: linear-gradient(#0ea5e9, #22d3ee);
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    color: $cUltraDarkBlue;
+
+    @include onPhone {
+      width: 80px;
+      height: 28px;
+      font-size: 10px;
+    }
+  }
+}

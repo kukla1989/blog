@@ -1,4 +1,10 @@
 .main-page-posts {
+  margin-bottom: 90px;
+  
+  @include onPhone {
+    margin-bottom: 41px;
+  }
+  
   &__title {
     font-size: 48px;
     font-weight: bold;
