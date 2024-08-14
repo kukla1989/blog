@@ -1,0 +1,63 @@
+.footer {
+  padding-top: 27px;
+  padding-bottom: 46px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  @include onPhone {
+    padding-top: 9px;
+    padding-bottom: 16px;
+  }
+
+  &__stroke {
+    position: absolute;
+    left: -40vw;
+    top:0;
+    height: 1px;
+    width: 140vw;
+    background: $cGray;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @include onPhone {
+      gap: 5px;
+    }
+
+  }
+
+  &__icon {
+    color: $cGray;
+  }
+
+  $iconSize: 30px;
+  $iconSizeMob: 14px;
+
+  &__telegram {
+    font-size: $iconSize;
+
+    @include onPhone {
+      font-size: $iconSizeMob;
+    }
+  }
+
+  &__github {
+    height: $iconSize;
+
+    @include onPhone {
+      height: $iconSizeMob;
+    }
+  }
+
+  &__linkedin {
+    width: calc($iconSize * 1.3);
+
+    @include onPhone {
+      width: calc($iconSizeMob * 1.3);
+    }
+  }
+}

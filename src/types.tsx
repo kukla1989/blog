@@ -1,7 +1,3 @@
-export type SVGprops = {
-  className: string;
-}
-
 export interface ProjectType {
   imgPath: string;
   name: string;
@@ -13,4 +9,8 @@ export interface ProjectType {
 export interface PostType {
   img: string;
   date: string;
+}
+
+export interface ClassNameProps {
+  className: string;
 }

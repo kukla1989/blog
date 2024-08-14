@@ -1,6 +1,6 @@
-import { SVGprops } from "../../types";
+import { ClassNameProps } from "../../types";
 
-function LinkedinSVG({ className }: SVGprops) {
+function LinkedinSVG({ className }: ClassNameProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

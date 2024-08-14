@@ -24,7 +24,11 @@
 
   &__nav{
     display: flex;
-    gap: 10px;
+    gap: 40px;
+
+    @include onPhone {
+      gap: 10px;
+    }
   }
 
   &__nav-item {

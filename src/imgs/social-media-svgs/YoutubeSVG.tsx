@@ -1,6 +1,6 @@
-import { SVGprops } from "../../types";
+import { ClassNameProps } from "../../types";
 
-function YoutubeSVG({ className }: SVGprops) {
+function YoutubeSVG({ className }: ClassNameProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
