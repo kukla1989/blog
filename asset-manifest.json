@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/blog/static/css/main.5d7a14de.css",
-    "main.js": "/blog/static/js/main.e646e798.js",
+    "main.css": "/blog/static/css/main.46a0c547.css",
+    "main.js": "/blog/static/js/main.c8055d80.js",
     "static/js/453.ede2c593.chunk.js": "/blog/static/js/453.ede2c593.chunk.js",
     "static/media/post3.png": "/blog/static/media/post3.5423108c701ced0ac126.png",
+    "static/media/post4.png": "/blog/static/media/post4.ae9eef001c226e0852ed.png",
+    "static/media/post6.png": "/blog/static/media/post6.14bf39c8ebbfff5b45ed.png",
     "static/media/post1.png": "/blog/static/media/post1.421867aae5f9d6650c97.png",
+    "static/media/post5.png": "/blog/static/media/post5.1926808bdf6b5e9bcccb.png",
     "static/media/post2.png": "/blog/static/media/post2.e11251d57109f0495c6c.png",
     "static/media/man.png": "/blog/static/media/man.a4693c0dfa2e00f59ea4.png",
     "static/media/project-lamp.png": "/blog/static/media/project-lamp.4f0bdfb638fcfa2f96b5.png",
     "static/media/project-prize.png": "/blog/static/media/project-prize.5b0a439b07444e43af95.png",
     "static/media/project-download.png": "/blog/static/media/project-download.7560da16aa8fa12f0ea6.png",
     "index.html": "/blog/index.html",
-    "main.5d7a14de.css.map": "/blog/static/css/main.5d7a14de.css.map",
-    "main.e646e798.js.map": "/blog/static/js/main.e646e798.js.map",
+    "main.46a0c547.css.map": "/blog/static/css/main.46a0c547.css.map",
+    "main.c8055d80.js.map": "/blog/static/js/main.c8055d80.js.map",
     "453.ede2c593.chunk.js.map": "/blog/static/js/453.ede2c593.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d7a14de.css",
-    "static/js/main.e646e798.js"
+    "static/css/main.46a0c547.css",
+    "static/js/main.c8055d80.js"
   ]
 }
