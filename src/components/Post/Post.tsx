@@ -1,5 +1,5 @@
 import React from "react";
-import { PostType } from "../../types";
+import { PostType } from "../../_utils/types";
 
 const Post: React.FC<PostType> = ({ img, date }: PostType) => {
   return (

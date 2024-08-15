@@ -1,4 +1,4 @@
-import { ClassNameProps } from "../../types";
+import { ClassNameProps } from "../../_utils/types";
 
 function FaceboogSVG({ className }: ClassNameProps) {
   return (

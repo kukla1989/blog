@@ -15,3 +15,20 @@
     @content;
   }
 }
+
+@mixin bold48 {
+  font-size: 48px;
+  font-weight: bold;
+
+  @include onPhone {
+    font-size: 20px;
+  }
+}
+
+@mixin fz20 {
+  font-size: 20px;
+
+  @include onPhone {
+    font-size: 13px;
+  }
+}

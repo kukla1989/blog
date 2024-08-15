@@ -1,5 +1,4 @@
 import About from '../About/About'
-import Footer from '../Footer/Footer'
 import MainPagePosts from '../MainPagePosts/MainPagePosts'
 import Projects from '../Projects/Projects'
 import Subscribe from '../Subscribe/Subscribe'
@@ -11,7 +10,6 @@ const MainPage = () => {
       <Projects />
       <MainPagePosts />
       <Subscribe />
-      <Footer />
     </div>
   ) 
 }

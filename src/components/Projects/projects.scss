@@ -1,11 +1,9 @@
 .projects {
   &__title {
-    font-size: 48px;
-    font-weight: bold;
+    @include bold48;
     margin-bottom: 83px;
 
     @include onPhone {
-      font-size: 20px;
       margin-bottom: 25px;
     }
   }

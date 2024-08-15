@@ -1,4 +1,4 @@
-import { ProjectType } from "../../types";
+import { ProjectType } from "../../_utils/types";
 
 const Project: React.FC<ProjectType> = ({
   imgPath,
@@ -15,7 +15,10 @@ const Project: React.FC<ProjectType> = ({
         <div className="project__info">
           <div className="project__title">{name}</div>
 
-          <div className={"project__tag--" + tagColor} style={{ '--tagLength': tag.length } as React.CSSProperties}>
+          <div
+            className={"project__tag--" + tagColor}
+            style={{ "--tagLength": tag.length } as React.CSSProperties}
+          >
             <div className={"project__tag-text--" + tagColor}>{tag}</div>
           </div>
         </div>

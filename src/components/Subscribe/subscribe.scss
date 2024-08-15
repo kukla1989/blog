@@ -19,21 +19,19 @@
   }
 
   &__title {
-    font-size: 48px;
+    @include bold48;
     font-weight: bold;
 
     @include onPhone {
-      font-size: 20px;
       text-align: center;
     }
   }
 
   &__info {
-    font-size: 20px;
+    @include fz20;
     color: $cGray;
 
     @include onPhone {
-      font-size: 13px;
       text-align: center;
     }
   }
@@ -75,11 +73,7 @@
 
   &__input::placeholder {
     color: $cGray;
-    font-size: 20px;
-
-    @include onPhone {
-      font-size: 13px;
-    }
+    @include fz20;
   }
 
   &__button {
@@ -90,7 +84,6 @@
     border: none;
     border-radius: 30px;
     font-weight: bold;
-    font-size: 20px;
     color: $cUltraDarkBlue;
 
     @include onPhone {

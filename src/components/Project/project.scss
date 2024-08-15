@@ -2,7 +2,11 @@
   width: calc((20 + var(--tagLength) * 7.5) * 1px);
   height: 32px;
   border-radius: 10px;
-  background: linear-gradient(to bottom, rgba($color1, 0.2), rgba($color2, 0.2));
+  background: linear-gradient(
+    to bottom,
+    rgba($color1, 0.2),
+    rgba($color2, 0.2)
+  );
   position: relative;
 
   @include onPhone {
@@ -12,7 +16,6 @@
 }
 
 @mixin tag__text($color1, $color2) {
-
   position: absolute;
   top: 50%;
   left: 50%;
@@ -89,34 +92,34 @@
   }
 
   &__tag-text--green {
-    @include tag__text(#10b981, #bef264)
+    @include tag__text(#10b981, #bef264);
   }
 
   &__tag--red {
-    @include tag(#DC2626, #F97316);
+    @include tag(#dc2626, #f97316);
   }
 
   &__tag-text--red {
-    @include tag__text(#DC2626, #F97316)
+    @include tag__text(#dc2626, #f97316);
   }
 
   &__tag--blue {
-    @include tag(#7C3AED, #60A5FA);
+    @include tag(#7c3aed, #60a5fa);
   }
 
   &__tag-text--blue {
-    @include tag__text(#7C3AED, #60A5FA)
+    @include tag__text(#7c3aed, #60a5fa);
   }
 
   &__description {
-    font-size: 20px;
+    @include fz20;
+
     display: inline-block;
     padding: 0 30px;
 
     @include onPhone {
       padding: 0;
       max-width: 290px;
-      font-size: 13px;
     }
   }
 }

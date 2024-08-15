@@ -16,7 +16,7 @@ $mPostWidth: 200px;
     gap: 15px;
   }
 
-  &__img{
+  &__img {
     width: $postWidth;
 
     @include onPhone {
@@ -34,12 +34,8 @@ $mPostWidth: 200px;
   }
 
   &__date {
-    font-size: 20px;
+    @include fz20;
     color: $cDarkGray;
-
-    @include onPhone {
-      font-size: 14px;
-    }
   }
 
   &__info {

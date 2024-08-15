@@ -20,19 +20,11 @@
   }
 
   &__title {
-    font-size: 48px;
-
-    @include onPhone {
-      font-size: 20px;
-    }
+    @include bold48;
   }
 
   &__text {
-    font-size: 20px;
-
-    @include onPhone {
-      font-size: 10px;
-    }
+    @include fz20;
   }
 
   &__social-media {
